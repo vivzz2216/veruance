@@ -86,7 +86,7 @@ interface Props {
   whatsappNumber?: string;
 }
 
-export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "917249292943" }: Props) {
+export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919665366116" }: Props) {
   const [currency, setCurrency] = useState<"USD" | "INR">("USD");
   const [selectedType, setSelectedType] = useState<string>("landing");
   const [scopeUnits, setScopeUnits] = useState<number>(1); // e.g. pages or key workflows
@@ -162,7 +162,10 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "917
     ];
 
     const message = lines.join("\n");
-    const cleanPhone = (whatsappNumber || "917249292943").replace(/[^0-9]/g, "");
+    let cleanPhone = (whatsappNumber || "919665366116").replace(/[^0-9]/g, "");
+    if (cleanPhone.length === 10) {
+      cleanPhone = "91" + cleanPhone;
+    }
     const waUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`;
 
     if (typeof window !== "undefined") {
