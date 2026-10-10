@@ -1,0 +1,279 @@
+/* ============================================================ */
+/* VERUANCE MINIMAL SERVICES — COMPACT SMALL CARDS              */
+/* ============================================================ */
+
+.vms-root {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.vms-small-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  width: 100%;
+}
+
+/* ── COMPACT CARD ────────────────────────────────────────── */
+.vms-small-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  padding: 22px 20px 20px;
+  background: #ffffff;
+  border: 1px solid rgba(14, 17, 22, 0.09);
+  border-radius: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.vms-small-card:hover,
+.vms-small-card--hovered {
+  border-color: rgba(14, 17, 22, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+/* ── HEADER ──────────────────────────────────────────────── */
+.vms-small-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.vms-small-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vms-small-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c939e;
+}
+
+.vms-small-cat {
+  font-family: 'Onest', 'Plus Jakarta Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a0a6b1;
+}
+
+.vms-small-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(14, 17, 22, 0.1);
+  color: #0e1116;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.vms-small-card:hover .vms-small-arrow {
+  background: #0e1116;
+  color: #ffffff;
+  border-color: #0e1116;
+  transform: rotate(45deg);
+}
+
+/* ── BODY ────────────────────────────────────────────────── */
+.vms-small-body {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.vms-small-title {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #0e1116;
+  margin: 0 0 6px 0;
+}
+
+.vms-small-headline {
+  font-family: 'Onest', 'Plus Jakarta Sans', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #555e69;
+  margin: 0;
+}
+
+/* ── COMPACT WIREFRAME PLACEHOLDER STRIP ─────────────────── */
+.vms-small-placeholder {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background: #f8f9fa;
+  border: 1px solid rgba(14, 17, 22, 0.06);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: background 0.2s ease;
+}
+
+.vms-small-card:hover .vms-small-placeholder {
+  background: #f2f4f7;
+  border-color: rgba(14, 17, 22, 0.12);
+}
+
+.vms-placeholder-pulse-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3b463e;
+  opacity: 0.6;
+}
+
+/* Mini Browser Wireframe */
+.vms-mini-wire-browser {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.vms-wire-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(14, 17, 22, 0.25);
+}
+
+.vms-wire-slug {
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(14, 17, 22, 0.12);
+  margin-left: 4px;
+}
+
+/* Mini Code Wireframe */
+.vms-mini-wire-code {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.vms-code-bar {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.vms-code-bar--1 { width: 18px; background: #3fd4ea; }
+.vms-code-bar--2 { width: 28px; background: rgba(14, 17, 22, 0.18); }
+.vms-code-bar--3 { width: 14px; background: #ffd166; }
+
+/* Mini Motion Wireframe */
+.vms-mini-wire-motion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.vms-mini-ring {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px dashed rgba(14, 17, 22, 0.3);
+  animation: vmsMiniSpin 6s linear infinite;
+}
+
+.vms-mini-axis {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c084fc;
+}
+
+@keyframes vmsMiniSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Mini Analytics Wireframe */
+.vms-mini-wire-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 18px;
+}
+
+.vms-mini-bar {
+  width: 4px;
+  border-radius: 1px 1px 0 0;
+  background: rgba(14, 17, 22, 0.18);
+}
+
+.vms-mini-bar--accent {
+  background: #34d399;
+}
+
+.vms-mini-wire-tag {
+  font-family: monospace;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #8c939e;
+}
+
+/* ── TAGS ────────────────────────────────────────────────── */
+.vms-small-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.vms-small-tag {
+  font-family: 'Onest', 'Plus Jakarta Sans', sans-serif;
+  font-size: 9.5px;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: rgba(14, 17, 22, 0.04);
+  color: #3b463e;
+  border: 1px solid rgba(14, 17, 22, 0.05);
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .vms-small-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vms-small-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .vms-small-card {
+    min-height: auto;
+    padding: 18px 16px;
+  }
+}

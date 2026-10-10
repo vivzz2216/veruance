@@ -1,0 +1,419 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T17:10:19.455Z",
+  "title": "Design System: Vivek Pillai Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Green charcoal",
+        "tonalRamp": [
+          "oklch(15.00% 0.0056 159.94)",
+          "oklch(26.43% 0.0056 159.94)",
+          "oklch(37.86% 0.0056 159.94)",
+          "oklch(49.29% 0.0056 159.94)",
+          "oklch(60.71% 0.0056 159.94)",
+          "oklch(72.14% 0.0056 159.94)",
+          "oklch(83.57% 0.0056 159.94)",
+          "oklch(95.00% 0.0056 159.94)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Charcoal surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0053 164.36)",
+          "oklch(26.43% 0.0053 164.36)",
+          "oklch(37.86% 0.0053 164.36)",
+          "oklch(49.29% 0.0053 164.36)",
+          "oklch(60.71% 0.0053 164.36)",
+          "oklch(72.14% 0.0053 164.36)",
+          "oklch(83.57% 0.0053 164.36)",
+          "oklch(95.00% 0.0053 164.36)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm off-white",
+        "tonalRamp": [
+          "oklch(15.00% 0.0066 106.52)",
+          "oklch(26.43% 0.0066 106.52)",
+          "oklch(37.86% 0.0066 106.52)",
+          "oklch(49.29% 0.0066 106.52)",
+          "oklch(60.71% 0.0066 106.52)",
+          "oklch(72.14% 0.0066 106.52)",
+          "oklch(83.57% 0.0066 106.52)",
+          "oklch(95.00% 0.0066 106.52)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.0143 134.92)",
+          "oklch(26.43% 0.0143 134.92)",
+          "oklch(37.86% 0.0143 134.92)",
+          "oklch(49.29% 0.0143 134.92)",
+          "oklch(60.71% 0.0143 134.92)",
+          "oklch(72.14% 0.0143 134.92)",
+          "oklch(83.57% 0.0143 134.92)",
+          "oklch(95.00% 0.0143 134.92)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      },
+      "olive": {
+        "role": "primary",
+        "displayName": "Olive",
+        "tonalRamp": [
+          "oklch(15.00% 0.1065 114.57)",
+          "oklch(26.43% 0.1065 114.57)",
+          "oklch(37.86% 0.1065 114.57)",
+          "oklch(49.29% 0.1065 114.57)",
+          "oklch(60.71% 0.1065 114.57)",
+          "oklch(72.14% 0.1065 114.57)",
+          "oklch(83.57% 0.1065 114.57)",
+          "oklch(95.00% 0.1065 114.57)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      },
+      "cyan": {
+        "role": "secondary",
+        "displayName": "Cinematic cyan",
+        "tonalRamp": [
+          "oklch(15.00% 0.0565 214.79)",
+          "oklch(26.43% 0.0565 214.79)",
+          "oklch(37.86% 0.0565 214.79)",
+          "oklch(49.29% 0.0565 214.79)",
+          "oklch(60.71% 0.0565 214.79)",
+          "oklch(72.14% 0.0565 214.79)",
+          "oklch(83.57% 0.0565 214.79)",
+          "oklch(95.00% 0.0565 214.79)"
+        ],
+        "rampNote": "Synthesized lightness ramp for documentation preview; not an implemented CSS scale."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Flat editorial hero",
+        "purpose": "Large native Good ideas / Working software heading, paired with introduction on the right."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Large section introductions."
+      },
+      "body": {
+        "displayName": "Supporting prose",
+        "purpose": "Readable product and practice explanations."
+      },
+      "label": {
+        "displayName": "Compact label",
+        "purpose": "Navigation metadata, disclosure, and control labels."
+      },
+      "serif-accent": {
+        "displayName": "Georgia accent",
+        "purpose": "Occasional italic words and short phrases within the Onest hierarchy."
+      }
+    },
+    "shadows": [
+      {
+        "name": "monogram-glow",
+        "value": "0 4px 30px rgba(184,194,112,.25)",
+        "purpose": "Logo hover."
+      },
+      {
+        "name": "action-glow",
+        "value": "0 8px 35px #b8c27022",
+        "purpose": "Primary action hover."
+      },
+      {
+        "name": "availability-light",
+        "value": "0 0 9px #b8c27055",
+        "purpose": "Availability dot."
+      },
+      {
+        "name": "toast-elevation",
+        "value": "0 10px 35px #050a0788",
+        "purpose": "Transient feedback over page."
+      },
+      {
+        "name": "center-story",
+        "value": "0 22px 50px #03110b7a",
+        "purpose": "Centered native story device."
+      },
+      {
+        "name": "studio-teaser",
+        "value": "0 15px 40px #04100e55",
+        "purpose": "Overlapping native Studio cards."
+      },
+      {
+        "name": "native-workspace",
+        "value": "0 15px 30px #223e3440",
+        "purpose": "Cream workspace above its colored mount."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Observed root easing for lifts and image motion."
+      },
+      {
+        "name": "button-lift",
+        "value": "transform .4s var(--ease),background .3s,box-shadow .3s",
+        "purpose": "Main action hover."
+      },
+      {
+        "name": "project-image",
+        "value": "transform .8s var(--ease)",
+        "purpose": "Image hover scale and rotation."
+      },
+      {
+        "name": "subtitle-entry",
+        "value": "line-in .65s var(--ease)",
+        "purpose": "Rotating subtitle reveal."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Disable CSS transitions and animations; pause subtitle and remove smooth scrolling."
+      },
+      {
+        "name": "studio-teaser",
+        "value": "transform .6s var(--ease)",
+        "purpose": "Native linked card lifts 7px on hover."
+      },
+      {
+        "name": "native-workspace-perspective",
+        "value": "transform .7s var(--ease)",
+        "purpose": "Perspective(1700px) rotateY(-3deg) rotateX(2deg) flattens on mount hover."
+      },
+      {
+        "name": "illustrative-timeline",
+        "value": "preview-playhead 9s linear infinite",
+        "purpose": "Shorts preview playhead, pauseable; reduced motion uses a static midpoint."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "visual-wide",
+        "value": "min-width:1700px"
+      },
+      {
+        "name": "section-wide",
+        "value": "min-width:1600px"
+      },
+      {
+        "name": "section-tablet",
+        "value": "max-width:1100px"
+      },
+      {
+        "name": "intermediate",
+        "value": "max-width:900px and min-width:761px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width:760px"
+      },
+      {
+        "name": "narrow",
+        "value": "max-width:370px"
+      },
+      {
+        "name": "compact-workspace",
+        "value": "max-width:420px"
+      },
+      {
+        "name": "smallest-workspace",
+        "value": "max-width:350px"
+      }
+    ],
+    "materials": [
+      {
+        "name": "glass-control",
+        "value": "backdrop-filter:blur(16px)",
+        "purpose": "Header, glass controls, project labels and toast."
+      },
+      {
+        "name": "dialog-backdrop",
+        "value": "background:rgba(4,9,6,.82);backdrop-filter:blur(12px)",
+        "purpose": "Separate open case study from page."
+      }
+    ],
+    "verification": {
+      "method": "source extraction",
+      "sources": [
+        "app/globals.css",
+        "app/portfolio-visuals.css",
+        "app/project-hero.css",
+        "app/project-details.css",
+        "app/components/project-hero.tsx",
+        "app/page.tsx",
+        "app/components/creative-gallery.tsx",
+        "app/stories/page.tsx",
+        "app/studio/page.tsx",
+        "app/reference-header.tsx",
+        "../../PRODUCT.md"
+      ],
+      "renderedVisualVerification": "unavailable",
+      "reason": "User explicitly denied localhost browser access.",
+      "buildVerification": "Performed separately by the implementing agent; this design document does not infer a visual fidelity percentage.",
+      "bindingReferences": "Artfolio structural inspiration; latest user steering requires a flat editorial hero with no image, dome or hemisphere."
+    },
+    "imagery": {
+      "strategy": "Homepage hero uses native typography and project DOM workspaces, with no image; lower project studies and separate Stories/Studio use original AI assets.",
+      "hero": [],
+      "projects": [
+        "project-grid.webp"
+      ],
+      "storiesAndStudio": [
+        "hero-portrait.webp",
+        "story-red.webp",
+        "story-cyan.webp",
+        "story-lime.webp"
+      ],
+      "sourceScreenshotsUsedAsPageImages": false,
+      "disclosure": "Supplied project descriptions are separate from illustrative interface studies, workflow walkthroughs, testimonials and engineering targets."
+    },
+    "layouts": {
+      "hero": "Flat editorial title-left / introduction-right opening; four-project selector-left / native workspace-right stage; mobile stacked layout.",
+      "workspace": "Labmate research organization, CampusHub sample-request review, human job review, Shorts illustrative timeline.",
+      "projects": "CSS quadrant offsets select AI studies from project-grid.webp; lower cards open shared details modal.",
+      "stories": "Separate native portrait strip with selected center device.",
+      "studio": "Separate native cyan beam and overlapping linked cards."
+    },
+    "identity": {
+      "name": "Vivek Pillai",
+      "role": "Software Developer | AI & Automation Solutions",
+      "email": "pillaivivek16@gmail.com",
+      "phone": "+917249292943",
+      "temporary": false
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Olive action with a gentle lift and diffuse glow.",
+      "html": "<button class=\"ds-primary\">View Featured Work<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-primary{font-family:Onest,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:17px;border:0;border-radius:40px;padding:16px 23px;font-size:13px;font-weight:500;background:var(--olive,#b8c270);color:#171b10;cursor:pointer;transition:transform .4s var(--ease,cubic-bezier(.16,1,.3,1)),background .3s,box-shadow .3s}.ds-primary:hover{transform:translateY(-3px);background:#cad488;box-shadow:0 8px 35px #b8c27022}.ds-primary:disabled{cursor:wait;opacity:.65}.ds-primary:focus-visible,.ds-secondary:focus-visible,.ds-chip:focus-visible,.ds-nav a:focus-visible,.ds-project:focus-visible,.ds-field:focus-visible,.ds-skill:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Glass discovery action with a translucent outline.",
+      "html": "<button class=\"ds-secondary\">Book a Discovery Call</button>",
+      "css": ".ds-secondary{font-family:Onest,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:17px;border:1px solid rgba(225,236,217,.18);border-radius:40px;padding:16px 23px;font-size:13px;font-weight:500;background:rgba(200,217,204,.035);color:var(--text,hsl(60 14% 93%));backdrop-filter:blur(16px);cursor:pointer;transition:transform .4s var(--ease,cubic-bezier(.16,1,.3,1)),background .3s}.ds-secondary:hover{transform:translateY(-3px);background:#b8c27012}.ds-primary:focus-visible,.ds-secondary:focus-visible,.ds-chip:focus-visible,.ds-nav a:focus-visible,.ds-project:focus-visible,.ds-field:focus-visible,.ds-skill:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Project Filter",
+      "kind": "chip",
+      "refersTo": "filter-selected",
+      "description": "Selected and unselected project-category controls.",
+      "html": "<div class=\"ds-filter-row\"><button class=\"ds-chip\" aria-pressed=\"true\">All work</button><button class=\"ds-chip\" aria-pressed=\"false\">Product &amp; design</button></div>",
+      "css": ".ds-filter-row{display:flex;gap:8px;flex-wrap:wrap}.ds-chip{font-family:Onest,sans-serif;border:1px solid var(--line,rgba(239,242,229,.12));background:transparent;color:#aab0a7;padding:10px 16px;border-radius:30px;font-size:12px;cursor:pointer;transition:background .3s}.ds-chip[aria-pressed=true]{background:var(--text,hsl(60 14% 93%));color:#1b201a;border-color:transparent}.ds-chip[aria-pressed=false]:hover{background:#b8c27012}.ds-primary:focus-visible,.ds-secondary:focus-visible,.ds-chip:focus-visible,.ds-nav a:focus-visible,.ds-project:focus-visible,.ds-field:focus-visible,.ds-skill:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-chip{transition:none}}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Outlined translucent contact field with olive focus.",
+      "html": "<label class=\"ds-label\">Your name<input class=\"ds-field\" name=\"name\" autocomplete=\"name\" placeholder=\"How should I call you?\"/></label>",
+      "css": ".ds-label{font-family:Onest,sans-serif;display:flex;flex-direction:column;gap:10px;font-size:11px;color:#c6d0bc;max-width:360px}.ds-field{font-family:Onest,sans-serif;background:#a4bd8c04;border:1px solid #bfceac27;border-radius:10px;width:100%;padding:14px;color:#e4ecdb;font-size:12px;caret-color:var(--olive,#b8c270);transition:border-color .3s}.ds-field:hover{border-color:#b8c27066}.ds-field::placeholder{color:#8e9e83}.ds-primary:focus-visible,.ds-secondary:focus-visible,.ds-chip:focus-visible,.ds-nav a:focus-visible,.ds-project:focus-visible,.ds-field:focus-visible,.ds-skill:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}.ds-field:focus-visible{outline-offset:2px}@media(prefers-reduced-motion:reduce){.ds-field{transition:none}}"
+    },
+    {
+      "name": "Glass Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Main navigation shares the flat dark hero surface and becomes fixed dark glass after scroll.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#work\">Work</a><a href=\"#experience\">Services</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{font-family:Onest,sans-serif;display:flex;align-items:center;gap:22px;padding:24px;background:transparent;font-size:12px;color:#b3b8b1}.ds-nav.ds-scrolled{background:#101713ec;backdrop-filter:blur(16px);border-bottom:1px solid #c9d6c31b}.ds-nav a{color:inherit;text-decoration:none;transition:color .25s}.ds-nav a:hover{color:var(--olive,#b8c270)}.ds-nav a:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+    },
+    {
+      "name": "Process Card",
+      "kind": "card",
+      "refersTo": "process-card",
+      "description": "Ambient olive process surface with restrained border.",
+      "html": "<article class=\"ds-process\"><span class=\"ds-step\">1</span><div><h3>Discover</h3><p>Start with the right questions. Understand the people, the problem, and what progress looks like.</p></div></article>",
+      "css": ".ds-process{font-family:Onest,sans-serif;max-width:340px;aspect-ratio:1.03;border:1px solid rgba(221,231,209,.07);border-radius:30px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(ellipse at 100% 0,#75845399,transparent 75%),#101510;color:var(--text,hsl(60 14% 93%))}.ds-step{font-size:47px;color:#d7e1d080;letter-spacing:-.04em}.ds-process h3{font-size:20px;font-weight:400;letter-spacing:-.025em;margin:0 0 9px}.ds-process p{margin:0;font-size:12px;line-height:1.6;color:#c3cab9;max-width:275px}"
+    },
+    {
+      "name": "Skill Control",
+      "kind": "button",
+      "refersTo": "skill-badge",
+      "description": "Outlined skill control with a focus and hover tooltip.",
+      "html": "<button class=\"ds-skill\" aria-label=\"React: Component architecture and interaction design\"><span class=\"ds-symbol\">Re</span><span>React</span><span class=\"ds-tooltip\" role=\"tooltip\">Component architecture and interaction design</span></button>",
+      "css": ".ds-skill{font-family:Onest,sans-serif;position:relative;display:flex;gap:13px;align-items:center;background:rgba(208,224,195,.025);border:1px solid var(--line,rgba(239,242,229,.12));border-radius:12px;padding:15px 12px;color:#d0d8c6;font-size:13px;text-align:left;cursor:pointer;transition:border .3s,transform .3s}.ds-skill:hover,.ds-skill:focus{border-color:#b8c27080;transform:translateY(-2px)}.ds-symbol{font-size:11px;border:1px solid #b8c27030;border-radius:8px;padding:8px;color:var(--olive,#b8c270);min-width:34px;text-align:center}.ds-tooltip{visibility:hidden;opacity:0;position:absolute;bottom:calc(100% + 8px);left:0;width:230px;padding:12px;border-radius:12px;background:#2b3523;color:#e7eddb;line-height:1.5;z-index:5;border:1px solid #b8c27040;transition:opacity .2s;font-size:12px}.ds-skill:hover .ds-tooltip,.ds-skill:focus .ds-tooltip{visibility:visible;opacity:1}.ds-primary:focus-visible,.ds-secondary:focus-visible,.ds-chip:focus-visible,.ds-nav a:focus-visible,.ds-project:focus-visible,.ds-field:focus-visible,.ds-skill:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-skill,.ds-tooltip{transition:none}}"
+    },
+    {
+      "name": "Carousel Arrow",
+      "kind": "button",
+      "refersTo": "carousel-arrow",
+      "description": "Circular previous/next controls shared by creative Stories and journal.",
+      "html": "<button class=\"ds-carousel-arrow\" aria-label=\"Next creator\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-carousel-arrow{font-family:Onest,sans-serif;height:40px;width:40px;border:1px solid #c8ddd026;border-radius:50%;background:#c1dfd00b;display:grid;place-items:center;color:#c1d4c9;cursor:pointer}.ds-carousel-arrow:hover{background:#c1dfd01c}.ds-carousel-arrow:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}"
+    },
+    {
+      "name": "Studio Teaser",
+      "kind": "card",
+      "refersTo": "studio-teaser",
+      "description": "Overlapping linked Studio surface; image omitted in this self-contained primitive preview.",
+      "html": "<a class=\"ds-studio-teaser\" href=\"#work\"><span class=\"ds-scene-chip\">Selected work</span><h2>At the intersection of<br/><em>design</em> and technology</h2></a>",
+      "css": ".ds-studio-teaser{font-family:Onest,sans-serif;display:block;background:#080b09;color:var(--text,hsl(60 14% 93%));border:1px solid #c4dbce45;border-radius:27px;overflow:hidden;padding:25px;text-decoration:none;box-shadow:0 15px 40px #04100e55;transition:transform .6s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-studio-teaser:hover{transform:translateY(-7px)}.ds-studio-teaser:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}.ds-scene-chip{display:inline-block;border:1px solid #d4e1cc28;border-radius:30px;font-size:10px;padding:5px 9px;color:#c4ceba;margin-bottom:14px}.ds-studio-teaser h2{font-size:34px;line-height:1.04;letter-spacing:-.035em;font-weight:400;margin:0 0 23px}.ds-studio-teaser em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#d5dcab}@media(prefers-reduced-motion:reduce){.ds-studio-teaser{transition:none}}"
+    },
+    {
+      "name": "Workspace Action",
+      "kind": "button",
+      "refersTo": "workspace-action",
+      "description": "Forest-green native preview action used by research, campus and job workspaces.",
+      "html": "<button class=\"ds-workspace-action\">Organize sample brief<svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-workspace-action{font-family:Onest,sans-serif;display:flex;align-items:center;gap:9px;border:0;border-radius:5px;background:#405a3c;color:#e3ead9;padding:10px 11px;font-size:9px;line-height:1.2;cursor:pointer}.ds-workspace-action:hover{background:#30472d}.ds-workspace-action:focus-visible{outline:2px solid var(--olive,#b8c270);outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Artfolio",
+    "overview": "Vivek Pillai’s portfolio presents Software Developer | AI & Automation Solutions. Artfolio references inform the Onest editorial hierarchy, dark surfaces, olive/cyan/coral character, and restrained glass controls. All compositions and interactions are native React; supplied screenshots are not page content.\n\nThe homepage is a flat editorial composition with large Onest/Georgia type, an introduction on the right, and a four-project workspace canvas. It uses no hero image, AI dome, or hemisphere outline. The workspaces demonstrate Labmate research organization, CampusHub request review, job-application review, and an illustrative Shorts Clipper timeline. Separate Stories and Studio pages retain original portraits and native visual explorations.\n\nSource extraction records the current design; browser verification is unavailable because localhost access was explicitly denied. Identity/contact remain Vivek Pillai, pillaivivek16@gmail.com, +91 72492 92943. Supplied project descriptions, illustrative UI studies/walkthroughs, testimonials, and engineering targets remain clearly distinguished.",
+    "keyCharacteristics": [
+      "Flat editorial hero with native typography and matching dark navigation surface.",
+      "Four selectable native project workspaces, each with useful preview controls.",
+      "Warm cream interface canvas inside sage/olive/cyan/coral mounts.",
+      "Onest headings with occasional Georgia italics; restrained outlines and glass.",
+      "Responsive layouts, accessible focus, reduced motion, and visible preview disclosures."
+    ],
+    "rules": [
+      {
+        "name": "Native Composition",
+        "body": "Translate the Artfolio composition into native elements and controls; never use supplied screenshots as whole-page layouts.",
+        "section": "colors"
+      },
+      {
+        "name": "Italic Accent",
+        "body": "Use Georgia italics for selected words and short phrases within the Onest hierarchy.",
+        "section": "typography"
+      },
+      {
+        "name": "Workspace Depth",
+        "body": "Keep the editorial page flat; use restrained perspective and a soft shadow to separate the native workspace from its colored mount.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain the flat editorial homepage and same-surface navigation.",
+      "Do use native project interfaces with sage/cream materials and real controls.",
+      "Do preserve Onest and occasional Georgia italic emphasis.",
+      "Do distinguish supplied project descriptions from illustrative previews, testimonials, and target metrics.",
+      "Do preserve keyboard focus, responsive layouts, and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't restore the rejected dome, hemisphere, or former homepage phone.",
+      "Don't embed supplied screenshots as page layouts or use a hero image.",
+      "Don't present preview interactions as live AI processing, submitted applications, campus requests, or video exports.",
+      "Don't present illustrative testimonials or engineering targets as verified client evidence.",
+      "Don't describe source/build checks as browser-verified visual fidelity."
+    ]
+  }
+}
