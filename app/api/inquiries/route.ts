@@ -1,10 +1,21 @@
-async function getEnv(): Promise<Record<string, any>> {
+interface CloudflareEnv {
+  DB?: {
+    prepare: (query: string) => {
+      bind: (...args: unknown[]) => {
+        run: () => Promise<unknown>;
+      };
+    };
+  };
+  [key: string]: unknown;
+}
+
+async function getEnv(): Promise<CloudflareEnv> {
   try {
     // Dynamic import to allow portable builds (e.g. Next.js on Vercel) where cloudflare:workers is absent
     const cf = await import(/* webpackIgnore: true */ "cloudflare:workers");
-    return cf.env || {};
+    return (cf.env as CloudflareEnv) || {};
   } catch {
-    return (process.env as Record<string, any>) || {};
+    return (process.env as unknown as CloudflareEnv) || {};
   }
 }
 

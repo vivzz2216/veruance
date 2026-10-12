@@ -70,6 +70,8 @@ export default function VeruanceMinimalServices({ onContact }: Props) {
               onClick={onContact}
               role="button"
               tabIndex={0}
+              aria-label={`Inquire about ${service.title}`}
+              title={`Inquire about ${service.title}`}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();

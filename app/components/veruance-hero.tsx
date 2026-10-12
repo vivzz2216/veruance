@@ -22,12 +22,35 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
 
         <nav id="vn-nav" className={`vn-links ${menuOpen ? "vn-links--open" : ""}`} aria-label="Main navigation" onKeyDown={event => { if (event.key === "Escape") { setMenuOpen(false); document.querySelector<HTMLButtonElement>(".vn-burger")?.focus(); } }}>
           {[["Home","#"],["Work","#work"],["Services","#services"],["Estimator","#estimator"],["Contact","#cta-section"]].map(([label, href]) => (
-            <a key={label} href={href} className="vn-link" onClick={() => setMenuOpen(false)}>{label}</a>
+            <a
+              key={label}
+              href={href}
+              className="vn-link"
+              onClick={(e) => {
+                setMenuOpen(false);
+                if (href === "#") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+                } else if (href.startsWith("#")) {
+                  e.preventDefault();
+                  document.querySelector(href)?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+                }
+              }}
+            >
+              {label}
+            </a>
           ))}
         </nav>
 
         <div className="vn-end">
-          <a href="#cta-section" className="vn-cta" onClick={onBookCall}>
+          <a
+            href="#cta-section"
+            className="vn-cta"
+            onClick={(e) => {
+              e.preventDefault();
+              onBookCall();
+            }}
+          >
             Start a Project
             <ArrowUpRight size={14} strokeWidth={2} aria-hidden="true" />
           </a>
@@ -62,7 +85,15 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
             </button>
           </div>
 
-          <a href="#work" className="vh-scroll" onClick={onExploreWork} aria-label="Scroll to explore portfolio">
+          <a
+            href="#work"
+            className="vh-scroll"
+            onClick={(e) => {
+              e.preventDefault();
+              onExploreWork();
+            }}
+            aria-label="Scroll to explore portfolio"
+          >
             <span className="vh-scroll-circle">
               <ArrowDown size={13} strokeWidth={2} aria-hidden="true" />
             </span>
@@ -71,7 +102,7 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
         </div>
 
         {/* Right device image */}
-        <div className="vh-right" aria-hidden="true">
+        <div className="vh-right">
           <div className="vh-device-wrap">
             <img
               src="/assets/optimized/hero-img.webp"

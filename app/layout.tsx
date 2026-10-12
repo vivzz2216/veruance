@@ -7,6 +7,7 @@ import "./artfolio-behance.css";
 import "./client-readiness.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://veruance.com"),
   title: "Veruance — Web Design & Development by Vivek Pillai",
   description: "Distinctive websites and digital experiences by Veruance. Explore our design work, discover our services and estimate your next website project.",
   openGraph: {
@@ -15,9 +16,10 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Veruance",
     locale: "en_US",
+    url: "/",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Veruance — Web Design & Development",
     description: "Distinctive websites and digital experiences by Vivek Pillai.",
   },

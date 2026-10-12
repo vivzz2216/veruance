@@ -145,8 +145,29 @@ export default function Portfolio() {
             <span className="vf-logo-text"><span className="vf-logo-v">ve</span>ruance</span>
           </a>
           <nav className="vf-nav" aria-label="Footer navigation">
-            {[["Work", "#work"], ["Services", "#services"], ["Process", "#process"], ["Contact", "#cta-section"]].map(([label, href]) => (
-              <a key={label} href={href} className="vf-nav-link">{label}</a>
+            {[
+              ["Work", "#work"],
+              ["Services", "#services"],
+              ["Process", "#process"],
+              ["Studio", "/studio"],
+              ["Stories", "/stories"],
+              ["Contact", "#cta-section"],
+            ].map(([label, href]) => (
+              <a
+                key={label}
+                href={href}
+                className="vf-nav-link"
+                onClick={(e) => {
+                  if (href.startsWith("#")) {
+                    e.preventDefault();
+                    document.querySelector(href)?.scrollIntoView({
+                      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+                    });
+                  }
+                }}
+              >
+                {label}
+              </a>
             ))}
           </nav>
           <a href="mailto:pillaivivek16@gmail.com" className="vf-email">pillaivivek16@gmail.com</a>

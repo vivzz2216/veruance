@@ -171,10 +171,6 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
     if (typeof window !== "undefined") {
       window.open(waUrl, "_blank", "noopener,noreferrer");
     }
-
-    if (onBookCall) {
-      onBookCall();
-    }
   };
 
   return (
@@ -378,6 +374,27 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
               <span>Discuss This Estimate on WhatsApp</span>
               <ArrowRight size={16} strokeWidth={2.4} />
             </button>
+
+            {onBookCall && (
+              <button
+                type="button"
+                onClick={onBookCall}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#6b7280",
+                  fontSize: "12px",
+                  marginTop: "10px",
+                  cursor: "pointer",
+                  textDecoration: "underline",
+                  textAlign: "center",
+                  width: "100%",
+                  display: "block",
+                }}
+              >
+                Prefer email? Jump to contact section
+              </button>
+            )}
 
             <p className="pce-guarantee">
               <ShieldCheck size={13} className="inline mr-1 text-[#111111]" />

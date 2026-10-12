@@ -91,7 +91,18 @@ export default function OurWork() {
           </article>
         ))}
       </div>
-      <a className="our-work__contact" href="#cta-section">Have a project in mind? Let’s create it. <span aria-hidden="true">↗</span></a>
+      <a
+        className="our-work__contact"
+        href="#cta-section"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("cta-section")?.scrollIntoView({
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+          });
+        }}
+      >
+        Have a project in mind? Let’s create it. <span aria-hidden="true">↗</span>
+      </a>
     </section>
   );
 }
