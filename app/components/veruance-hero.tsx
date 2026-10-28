@@ -16,18 +16,9 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
       <div className="vh-wrapper vh-wrapper--in">
         {/* ─── NAVIGATION (Seamless, no box) ─────────────────────── */}
       <header className="vn" role="banner">
-        <a href="#" className="vn-brand" aria-label="Veruance home">
-          <img
-            src="/assets/veruance-logo.png"
-            width={48}
-            height={38}
-            alt=""
-            aria-hidden="true"
-            className="vn-logo-mark"
-          />
+        <a href="#" className="vn-brand" aria-label="Veruance home" onClick={event => { event.preventDefault(); window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }}>
           <span className="vn-logo-text">veruance</span>
         </a>
-
         <nav id="vn-nav" className={`vn-links ${menuOpen ? "vn-links--open" : ""}`} aria-label="Main navigation" onKeyDown={event => { if (event.key === "Escape") { setMenuOpen(false); document.querySelector<HTMLButtonElement>(".vn-burger")?.focus(); } }}>
           {[["Home","#"],["Work","#work"],["Services","#services"],["Estimator","#estimator"],["Contact","#cta-section"]].map(([label, href]) => (
             <a
@@ -125,12 +116,12 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
         <div className="vh-right">
           <div className="vh-device-wrap">
             <img
-              src="/assets/optimized/veruance-hero-img.png"
-              width={1024}
-              height={768}
+              src="/assets/optimized/veruance-hero-cutout.webp"
+              width={1448}
+              height={1086}
               fetchPriority="high"
               decoding="async"
-              alt="Veruance laptop and mobile digital experience mockups"
+              alt="Laptop and phone displaying the Veruance website on a dark stone platform"
               className="vh-device-img"
               loading="eager"
               draggable={false}

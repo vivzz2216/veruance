@@ -208,7 +208,7 @@ Vivek Pillai’s portfolio presents Software Developer | AI & Automation Solutio
 
 The homepage is a flat editorial composition with large Onest/Georgia type, an introduction on the right, and a four-project workspace canvas. It uses no hero image, AI dome, or hemisphere outline. The workspaces demonstrate Labmate research organization, CampusHub request review, job-application review, and an illustrative Shorts Clipper timeline. Separate Stories and Studio pages retain original portraits and native visual explorations.
 
-Source extraction records the current design; browser verification is unavailable because localhost access was explicitly denied. Identity/contact remain Vivek Pillai, pillaivivek16@gmail.com, +91 96653 66116. Supplied project descriptions, illustrative UI studies/walkthroughs, testimonials, and engineering targets remain clearly distinguished.
+Source extraction records the current design; browser verification is unavailable because localhost access was explicitly denied. Identity/contact remain Vivek Pillai, veruance777@gmail.com, +91 96653 66116. Supplied project descriptions, illustrative UI studies/walkthroughs, testimonials, and engineering targets remain clearly distinguished.
 
 **Key Characteristics:**
 

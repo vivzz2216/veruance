@@ -23,7 +23,7 @@ export async function POST(request: Request) {
   const env = await getEnv();
   if (!env.DB) {
     return Response.json(
-      { error: "Online inquiries are unavailable. Please email pillaivivek16@gmail.com." },
+      { error: "Online inquiries are unavailable. Please email veruance777@gmail.com." },
       { status: 503 }
     );
   }

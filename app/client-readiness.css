@@ -8,7 +8,6 @@
 .expertise-strip__specialisms { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 18px 32px; list-style: none; padding: 0; margin: 0; font-size: 14px; font-weight: 500; }
 .expertise-strip__specialisms li { white-space: nowrap; }
 .vn-burger { width: 44px; height: 44px; align-items: center; }
-.vn-brand { min-height: 44px; }
 .vn-cta { min-height: 44px; }
 .vn-link, .vf-nav-link { display: inline-flex; align-items: center; min-height: 44px; }
 .pce-currency-btn { min-height: 44px; }
@@ -38,6 +37,4 @@
 @media (max-width: 380px) {
   .vn-end { gap: 6px; }
   .vn-cta { padding: 10px 12px; font-size: 11px; }
-  .vn-logo-mark { width: 40px; height: 32px; }
-  .vn-logo-text { font-size: 23px; }
 }

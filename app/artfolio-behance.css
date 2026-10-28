@@ -2162,18 +2162,17 @@ body {
   display: none !important;
 }
 
+.vn-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .vn-brand {
   display: flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  flex-shrink: 0;
-}
-
-.vn-logo-mark {
-  width: 48px;
-  height: 38px;
-  object-fit: contain;
   flex: 0 0 auto;
 }
 
@@ -2184,12 +2183,6 @@ body {
   font-weight: 600;
   color: #0e1116;
   letter-spacing: -0.03em;
-}
-
-.vn-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
 }
 
 .vn-link {
@@ -3962,13 +3955,22 @@ body {
   flex-wrap: wrap;
 }
 
-.vf-brand { text-decoration: none; }
+.vf-brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+.vf-logo-image {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(14, 17, 22, 0.12);
+  border-radius: 50%;
+  object-fit: cover;
+}
 .vf-logo-text {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   font-style: italic;
-  font-size: 22px;
-  color: #111;
-  letter-spacing: -0.02em;
+  font-size: 26px;
+  font-weight: 600;
+  color: #0e1116;
+  letter-spacing: -0.03em;
 }
 .vf-logo-v { color: #c8972a; }
 

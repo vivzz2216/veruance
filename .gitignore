@@ -20,6 +20,9 @@
 
 # misc
 .DS_Store
+desktop.ini
+icon.ico
+veruance-hero-img.png
 *.pem
 
 # debug

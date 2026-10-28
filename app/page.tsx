@@ -130,7 +130,7 @@ export default function Portfolio() {
             <p className="cta-desc">Tell us about your idea, business, or next project. Email us to discuss your scope and next steps.</p>
           </div>
           <div className="cta-action">
-            <a href="mailto:pillaivivek16@gmail.com" className="cta-btn">
+            <a href="mailto:veruance777@gmail.com" className="cta-btn">
               Start a Project
               <ArrowRight size={16} strokeWidth={2.2} />
             </a>
@@ -142,6 +142,7 @@ export default function Portfolio() {
       <footer className="vf-footer">
         <div className="vf-top">
           <a href="#" className="vf-brand">
+            <img className="vf-logo-image" src="/assets/optimized/veruance-logo.webp" alt="" />
             <span className="vf-logo-text"><span className="vf-logo-v">ve</span>ruance</span>
           </a>
           <nav className="vf-nav" aria-label="Footer navigation">
@@ -170,7 +171,7 @@ export default function Portfolio() {
               </a>
             ))}
           </nav>
-          <a href="mailto:pillaivivek16@gmail.com" className="vf-email">pillaivivek16@gmail.com</a>
+          <a href="mailto:veruance777@gmail.com" className="vf-email">veruance777@gmail.com</a>
         </div>
         <div className="vf-bottom">
           <span>© {new Date().getFullYear()} Veruance · Vivek Pillai</span>

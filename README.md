@@ -2,13 +2,15 @@
 
 The working project is in this folder on the Desktop. Double-click Start Website.cmd in the outer project folder, then open http://localhost:5173.
 
-The homepage has an Our Work gallery with six complete website previews: NOIRÉ Fashion, Lumière Salon & Spa, Elevate Architecture, Terra Skincare, Maison Interiors, and Aura Retreat. Each project has its own visual style, category and description. Clicking a preview opens the full-size image in a new tab. The gallery uses two columns on desktop and one on mobile, without cropping the images.
+The homepage has an Our Work gallery featuring live website deployments and interactive test sites: NOIRÉ Apparel (test5), LUMIÈRE Studio (test6), Elevate Properties, Terra Skincare, MAISON Furniture, and AURA Island Resort. Each project has its own visual style, category and description. All six projects feature live interactive Vercel deployments with clickable live badges and direct links.
 
-The four added previews are illustrative website concepts generated with built-in imagegen:
-- Elevate: cinematic dark architecture, vertical navigation, condensed typography.
-- Terra: playful lilac/yellow beauty store, rounded type, product shelf.
-- Maison: Swiss furniture catalogue, oversized type, cobalt/acid-yellow panels.
-- Aura: immersive ocean resort, full-screen photography, floating booking bar.
+The projects include:
+- NOIRÉ Apparel (Test Site): editorial monochrome storefront with luxury typography (https://noire-fashion-delta.vercel.app/).
+- LUMIÈRE Studio (Test Site): luxury beauty and wellness studio with updated services imagery (https://lumiere-studio-eta.vercel.app/).
+- Elevate Properties: cinematic dark architecture, vertical navigation, condensed typography (https://elevate-properties-phi.vercel.app/).
+- Terra Skincare: playful lilac/yellow beauty store, rounded type, product shelf (https://terra-skincare.vercel.app/).
+- MAISON Furniture: Swiss furniture catalogue, oversized type, cobalt/acid-yellow panels (https://maison-furniture-peach.vercel.app/).
+- AURA Island Resort: immersive ocean resort, full-screen photography, floating booking bar (https://aura-island-resort.vercel.app/).
 
 Source: app/page.tsx. Gallery: app/components/OurWork.tsx and OurWork.css. Images: public/assets. Exact generation prompts: design-assets/website-preview-prompts.json.
 
