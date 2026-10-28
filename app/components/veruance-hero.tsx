@@ -19,8 +19,8 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
         <a href="#" className="vn-brand" aria-label="Veruance home">
           <img
             src="/assets/veruance-logo.png"
-            width={40}
-            height={32}
+            width={48}
+            height={38}
             alt=""
             aria-hidden="true"
             className="vn-logo-mark"
@@ -125,9 +125,9 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
         <div className="vh-right">
           <div className="vh-device-wrap">
             <img
-              src="/assets/optimized/hero-img.webp"
-              width={1448}
-              height={1086}
+              src="/assets/optimized/veruance-hero-img.png"
+              width={1024}
+              height={768}
               fetchPriority="high"
               decoding="async"
               alt="Veruance laptop and mobile digital experience mockups"
