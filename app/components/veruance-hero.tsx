@@ -17,6 +17,14 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
         {/* ─── NAVIGATION (Seamless, no box) ─────────────────────── */}
       <header className="vn" role="banner">
         <a href="#" className="vn-brand" aria-label="Veruance home">
+          <img
+            src="/assets/veruance-logo.png"
+            width={40}
+            height={32}
+            alt=""
+            aria-hidden="true"
+            className="vn-logo-mark"
+          />
           <span className="vn-logo-text">veruance</span>
         </a>
 
@@ -40,6 +48,18 @@ export default function VeruanceHero({ onBookCall, onExploreWork, menuOpen, setM
               {label}
             </a>
           ))}
+          <a
+              href="#cta-section"
+              className="vn-mobile-cta"
+              onClick={(e) => {
+                e.preventDefault();
+                setMenuOpen(false);
+                onBookCall();
+              }}
+          >
+              Start a Project
+              <ArrowUpRight size={14} strokeWidth={2} aria-hidden="true" />
+          </a>
         </nav>
 
         <div className="vn-end">

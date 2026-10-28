@@ -26,13 +26,18 @@
 .not-found p { color: #59616b; line-height: 1.7; margin-bottom: 28px; }
 .not-found a { display: inline-block; padding: 14px 22px; background: #11151b; color: #fff; border-radius: 100px; }
 @media (max-width: 820px) {
-  .expertise-strip__inner { align-items: flex-start; flex-direction: column; gap: 24px; }
-  .expertise-strip__specialisms { justify-content: flex-start; gap: 16px 24px; }
+  .expertise-strip { padding: 24px 5%; }
+  .expertise-strip__inner { align-items: stretch; flex-direction: column; gap: 18px; }
+  .expertise-strip__experience { gap: 12px; }
+  .expertise-strip__experience strong { font-size: 36px; }
+  .expertise-strip__experience span { max-width: none; font-size: 12px; }
+  .expertise-strip__specialisms { justify-content: flex-start; gap: 12px 20px; font-size: 12px; }
   .vn-links--open { gap: 4px; }
   .vn-link { padding: 4px 12px; }
 }
 @media (max-width: 380px) {
   .vn-end { gap: 6px; }
   .vn-cta { padding: 10px 12px; font-size: 11px; }
+  .vn-logo-mark { width: 34px; height: 28px; }
   .vn-logo-text { font-size: 23px; }
 }
