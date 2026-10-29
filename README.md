@@ -7,8 +7,8 @@ The homepage has an Our Work gallery featuring live website deployments and inte
 The projects include:
 - NOIRÉ Apparel (Test Site): editorial monochrome storefront with luxury typography (https://noire-fashion-delta.vercel.app/).
 - LUMIÈRE Studio (Test Site): luxury beauty and wellness studio with updated services imagery (https://lumiere-studio-eta.vercel.app/).
-- Elevate Properties: cinematic dark architecture, vertical navigation, condensed typography (https://elevate-properties-phi.vercel.app/).
-- Terra Skincare: playful lilac/yellow beauty store, rounded type, product shelf (https://terra-skincare.vercel.app/).
+- Elevate Properties: architectural portfolio with a coastal residence and editorial type (https://elevate-properties-phi.vercel.app/).
+- Terra Skincare: skincare concept with warm product photography and soft lilac tones (https://terra-skincare.vercel.app/).
 - MAISON Furniture: Swiss furniture catalogue, oversized type, cobalt/acid-yellow panels (https://maison-furniture-peach.vercel.app/).
 - AURA Island Resort: immersive ocean resort, full-screen photography, floating booking bar (https://aura-island-resort.vercel.app/).
 

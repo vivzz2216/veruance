@@ -12,7 +12,6 @@ import {
   ArrowRight, 
   ShieldCheck, 
   SlidersHorizontal,
-  Flame,
   Zap,
   MessageCircle
 } from "lucide-react";
@@ -33,8 +32,8 @@ const PROJECT_TYPES: ProjectOption[] = [
     id: "landing",
     name: "Starter Landing Page",
     desc: "A focused, responsive one-page site with a clear message, strong call to action, and polished launch-ready layout.",
-    basePriceUSD: 70,
-    basePriceINR: 6000,
+    basePriceUSD: 150,
+    basePriceINR: 12000,
     weeks: 1,
     icon: Globe,
   },
@@ -42,8 +41,8 @@ const PROJECT_TYPES: ProjectOption[] = [
     id: "web-app",
     name: "Business Website",
     desc: "A multi-page website with responsive layouts, reusable sections, contact flow, and a clean foundation for growth.",
-    basePriceUSD: 180,
-    basePriceINR: 15000,
+    basePriceUSD: 450,
+    basePriceINR: 35000,
     weeks: 2,
     icon: Layers,
   },
@@ -51,8 +50,8 @@ const PROJECT_TYPES: ProjectOption[] = [
     id: "ai-system",
     name: "Conversion Build",
     desc: "A higher-touch website or lightweight web experience with custom sections, forms, integrations, and conversion-focused UX.",
-    basePriceUSD: 350,
-    basePriceINR: 30000,
+    basePriceUSD: 900,
+    basePriceINR: 75000,
     weeks: 3,
     icon: Cpu,
   },
@@ -60,8 +59,8 @@ const PROJECT_TYPES: ProjectOption[] = [
     id: "flagship",
     name: "Signature Experience",
     desc: "A distinctive custom website with richer motion, tailored interactions, and the strategic polish needed for a standout launch.",
-    basePriceUSD: 650,
-    basePriceINR: 55000,
+    basePriceUSD: 1500,
+    basePriceINR: 125000,
     weeks: 4,
     icon: Sparkles,
   },
@@ -75,10 +74,10 @@ interface Addon {
 }
 
 const ADDONS: Addon[] = [
-  { id: "webgl", name: "Advanced Motion & Interaction", priceUSD: 90, priceINR: 7500 },
-  { id: "cms", name: "Easy Content Editing", priceUSD: 100, priceINR: 8500 },
-  { id: "seo", name: "SEO & Analytics Setup", priceUSD: 50, priceINR: 4000 },
-  { id: "fast-track", name: "Priority Delivery", priceUSD: 100, priceINR: 8500 },
+  { id: "webgl", name: "Advanced Motion & Interaction", priceUSD: 150, priceINR: 12000 },
+  { id: "cms", name: "Easy Content Editing", priceUSD: 200, priceINR: 15000 },
+  { id: "seo", name: "SEO & Analytics Setup", priceUSD: 100, priceINR: 8000 },
+  { id: "fast-track", name: "Priority Delivery", priceUSD: 150, priceINR: 12000 },
 ];
 
 interface Props {
@@ -86,7 +85,7 @@ interface Props {
   whatsappNumber?: string;
 }
 
-export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919665366116" }: Props) {
+export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919226293592" }: Props) {
   const [currency, setCurrency] = useState<"USD" | "INR">("USD");
   const [selectedType, setSelectedType] = useState<string>("landing");
   const [scopeUnits, setScopeUnits] = useState<number>(1); // e.g. pages or key workflows
@@ -122,8 +121,8 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
     const rawTotal = Math.round(base * scaleFactor + addonsTotal);
     // Keep the entry package at its advertised minimum while keeping quotes tidy.
     const rounded = isUSD
-      ? Math.max(70, Math.round(rawTotal / 10) * 10)
-      : Math.max(6000, Math.round(rawTotal / 500) * 500);
+      ? Math.max(base, Math.round(rawTotal / 10) * 10)
+      : Math.max(base, Math.round(rawTotal / 1000) * 1000);
     return rounded;
   }, [currency, activeType, scopeUnits, selectedAddons]);
 
@@ -153,7 +152,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
       "Hi Vivek! I calculated an estimate on your website and would like to discuss it:",
       "",
       `• Package: ${activeType.name}`,
-      `• Scope: ${scopeUnits} ${scopeUnits === 1 ? "Core View" : "Core Views"}`,
+      `• Scope: ${scopeUnits} ${scopeUnits === 1 ? "page or core flow" : "pages / core flows"}`,
       `• Enhancements: ${addonsText}`,
       `• Estimated Investment: ${costText}`,
       `• Estimated Timeline: ${timelineText}`,
@@ -162,7 +161,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
     ];
 
     const message = lines.join("\n");
-    let cleanPhone = (whatsappNumber || "919665366116").replace(/[^0-9]/g, "");
+    let cleanPhone = (whatsappNumber || "919226293592").replace(/[^0-9]/g, "");
     if (cleanPhone.length === 10) {
       cleanPhone = "91" + cleanPhone;
     }
@@ -199,7 +198,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
             <div>
               <div className="pce-group-title">
                 <span>1. Select a Package</span>
-                <span className="pce-pill-badge">{PROJECT_TYPES.length} options</span>
+                <span className="pce-step-label">{PROJECT_TYPES.length} packages</span>
               </div>
               <div className="pce-options-grid">
                 {PROJECT_TYPES.map((type) => {
@@ -221,6 +220,9 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
                       </div>
                       <h3 className="pce-option-name">{type.name}</h3>
                       <p className="pce-option-desc">{type.desc}</p>
+                      <span className="pce-option-price">
+                        From {currency === "USD" ? `$${type.basePriceUSD.toLocaleString("en-US")}` : `₹${type.basePriceINR.toLocaleString("en-IN")}`}
+                      </span>
                     </button>
                   );
                 })}
@@ -231,7 +233,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
             <div>
               <div className="pce-group-title">
                 <span>2. Scope & Volume</span>
-                <span className="pce-pill-badge">Pages / Workflows</span>
+                <span className="pce-step-label">Pages / workflows</span>
               </div>
               <div className="pce-slider-wrap">
                 <div className="pce-slider-labels">
@@ -251,7 +253,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
                 <div className="flex justify-between text-xs text-[#6b7280] px-1 font-medium">
                   <span>1 Single View</span>
                   <span>5 Standard</span>
-                  <span>12+ Enterprise</span>
+                  <span>12 Views</span>
                 </div>
               </div>
             </div>
@@ -259,13 +261,13 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
             {/* 3. Add-on Features */}
             <div>
               <div className="pce-group-title">
-                <span>3. High-Precision Enhancements</span>
-                <span className="pce-pill-badge">Optional</span>
+                <span>3. Optional Enhancements</span>
+                <span className="pce-step-label">Add as needed</span>
               </div>
               <div className="pce-addons-grid">
                 {ADDONS.map((addon) => {
                   const isChecked = selectedAddons.includes(addon.id);
-                  const priceLabel = currency === "USD" ? `+$${addon.priceUSD}` : `+₹${addon.priceINR.toLocaleString()}`;
+                  const priceLabel = currency === "USD" ? `+$${addon.priceUSD.toLocaleString("en-US")}` : `+₹${addon.priceINR.toLocaleString("en-IN")}`;
                   return (
                     <div
                       key={addon.id}
@@ -299,8 +301,8 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
           <div className="pce-summary-card">
             <div className="pce-summary-header">
               <div className="pce-summary-badge">
-                <Flame size={12} />
-                <span>Live Project Scope</span>
+                <Sparkles size={14} />
+                <span>Your project estimate</span>
               </div>
               <div className="pce-currency-toggle" role="group" aria-label="Currency selection">
                 <button
@@ -324,11 +326,16 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
 
             {/* Price display */}
             <div className="pce-price-block">
+              <div className="pce-selected-package">
+                <span>SELECTED PACKAGE</span>
+                <strong>{activeType.name}</strong>
+                <span>{scopeUnits} {scopeUnits === 1 ? "page / core flow" : "pages / core flows"}</span>
+              </div>
               <span className="pce-price-label">Estimated Investment</span>
               <div className="pce-price-val" role="status" aria-live="polite" aria-atomic="true">
-                {currency === "USD" ? `$${estimatedCost.toLocaleString()}` : `₹${estimatedCost.toLocaleString()}`}
+                {currency === "USD" ? `$${estimatedCost.toLocaleString("en-US")}` : `₹${estimatedCost.toLocaleString("en-IN")}`}
               </div>
-              <span className="pce-price-sub">Fixed-fee sprint pricing · No hidden costs</span>
+              <span className="pce-price-sub">Fixed-fee estimate · no hidden costs</span>
             </div>
 
             {/* Timeline & Inclusions */}
@@ -379,18 +386,7 @@ export default function ProjectCostEstimator({ onBookCall, whatsappNumber = "919
               <button
                 type="button"
                 onClick={onBookCall}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#6b7280",
-                  fontSize: "12px",
-                  marginTop: "10px",
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                  textAlign: "center",
-                  width: "100%",
-                  display: "block",
-                }}
+                className="pce-email-link"
               >
                 Prefer email? Jump to contact section
               </button>

@@ -511,3 +511,384 @@
   margin: 0;
   line-height: 1.5;
 }
+
+/* Refined estimate planner */
+.pce-section {
+  padding: clamp(72px, 9vw, 120px) 24px;
+  background: #f5f6f8;
+  color: #11151b;
+  border-top: 1px solid #e0e3e8;
+}
+
+.pce-container { max-width: 1320px; }
+
+.pce-header {
+  max-width: 780px;
+  margin: 0 auto 54px;
+  align-items: center;
+  text-align: center;
+}
+
+.pce-eyebrow {
+  gap: 9px;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #3658cd;
+  font-size: 11px;
+  letter-spacing: .17em;
+}
+
+.pce-heading {
+  margin-bottom: 18px;
+  color: #11151b;
+  font-size: clamp(36px, 5vw, 62px);
+  letter-spacing: -.045em;
+}
+
+.pce-heading em {
+  color: #3658cd;
+  text-decoration: none;
+}
+
+.pce-sub {
+  max-width: 620px;
+  color: #59616b;
+  font-size: 15px;
+}
+
+.pce-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, .78fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.pce-config-panel,
+.pce-summary-card {
+  border: 1px solid #e0e3e8;
+  border-radius: 22px;
+  box-shadow: 0 18px 52px rgba(17, 21, 27, .07);
+}
+
+.pce-config-panel {
+  align-self: stretch;
+  gap: 34px;
+  padding: clamp(22px, 3vw, 34px);
+  background: #fff;
+}
+
+.pce-group-title {
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-color: #e5e7eb;
+  color: #354352;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.pce-step-label {
+  color: #737b85;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.pce-options-grid { gap: 12px; }
+
+.pce-option-card {
+  min-height: 218px;
+  gap: 12px;
+  padding: 19px;
+  border: 1px solid #e1e4e9;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color .2s ease, background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.pce-option-card:hover {
+  transform: translateY(-2px);
+  border-color: #aebceb;
+  background: #fcfcff;
+  box-shadow: 0 8px 22px rgba(17, 21, 27, .07);
+}
+
+.pce-option-card.active {
+  border: 1.5px solid #3658cd;
+  background: #f2f5ff;
+  box-shadow: inset 0 0 0 1px #3658cd;
+}
+
+.pce-option-header { min-height: 34px; }
+
+.pce-option-icon {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 10px;
+  background: #f0f2fb;
+  color: #3658cd;
+}
+
+.pce-option-card.active .pce-option-icon {
+  background: #3658cd;
+  color: #fff;
+}
+
+.pce-option-card.active .pce-option-header > svg:last-child { color: #3658cd; }
+
+.pce-option-name {
+  color: #11151b;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.pce-option-desc {
+  color: #59616b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.pce-option-price {
+  margin-top: auto;
+  color: #3658cd;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+.pce-slider-wrap { gap: 16px; }
+.pce-slider-labels > span:first-child { color: #59616b; }
+.pce-slider-val { color: #273f9f; font-size: 23px; }
+
+.pce-slider {
+  height: 6px;
+  border: 0;
+  background: #e4e7ee;
+}
+
+.pce-slider::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  background: #3658cd;
+  box-shadow: 0 0 0 1px #3658cd, 0 3px 8px rgba(17, 21, 27, .18);
+}
+
+.pce-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  background: #3658cd;
+  box-shadow: 0 0 0 1px #3658cd;
+}
+
+.pce-addons-grid { gap: 10px; }
+
+.pce-addon-chip {
+  min-height: 54px;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e1e4e9;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.pce-addon-chip:hover { border-color: #aebceb; background: #fcfcff; }
+.pce-addon-chip.active { border: 1px solid #8096e7; background: #f2f5ff; box-shadow: none; }
+.pce-addon-left { gap: 10px; }
+
+.pce-checkbox {
+  flex: 0 0 18px;
+  border-color: #b9bec9;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.pce-addon-chip.active .pce-checkbox { border-color: #3658cd; background: #3658cd; }
+.pce-addon-text { color: #46505c; font-size: 12px; font-weight: 600; }
+.pce-addon-chip > span { color: #354352; }
+
+.pce-summary-card {
+  align-self: stretch;
+  position: sticky;
+  top: 24px;
+  gap: 24px;
+  padding: clamp(23px, 3vw, 32px);
+  border-color: #11151b;
+  background: #11151b;
+  color: #f4f5f8;
+  box-shadow: 0 22px 55px rgba(17, 21, 27, .18);
+}
+
+.pce-summary-header {
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-color: rgba(255, 255, 255, .14);
+}
+
+.pce-summary-badge {
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #d7defa;
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+.pce-currency-toggle {
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, .08);
+}
+
+.pce-currency-btn {
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: #c5cad3;
+  font-size: 10px;
+}
+
+.pce-currency-btn.active { background: #e8ecff; color: #1c2b70; }
+
+.pce-price-block { gap: 10px; }
+
+.pce-selected-package {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 5px 12px;
+  margin-bottom: 9px;
+  padding: 13px 14px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .055);
+}
+
+.pce-selected-package > span:first-child {
+  grid-column: 1 / -1;
+  color: #b8c2f2;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.pce-selected-package strong { color: #fff; font-size: 14px; font-weight: 600; }
+.pce-selected-package > span:last-child { color: #c5cad3; font-size: 10px; text-align: right; }
+
+.pce-price-label {
+  color: #b8c2f2;
+  font-size: 10px;
+  letter-spacing: .14em;
+}
+
+.pce-price-val {
+  color: #fff;
+  font-family: 'Onest', sans-serif;
+  font-size: clamp(44px, 5vw, 62px);
+  font-weight: 600;
+  letter-spacing: -.06em;
+}
+
+.pce-price-sub { color: #c5cad3; font-size: 11px; }
+
+.pce-deliverables {
+  gap: 17px;
+  padding: 19px 0;
+  border-color: rgba(255, 255, 255, .14);
+}
+
+.pce-timeline-label { color: #d2d5dc; font-size: 12px; }
+.pce-timeline-label svg { color: #aebcff; }
+.pce-timeline-val { color: #fff; font-size: 13px; }
+.pce-included-list { gap: 12px; }
+.pce-included-item { gap: 9px; color: #d4d6dc; font-size: 11px; line-height: 1.5; }
+.pce-check-icon { color: #aebcff; }
+
+.pce-action-btn {
+  min-height: 54px;
+  gap: 9px;
+  padding: 14px 16px;
+  border: 1px solid #3658cd;
+  border-radius: 11px;
+  background: #3658cd;
+  color: #fff;
+  box-shadow: none;
+  font-size: 12px;
+  transition: background-color .18s ease, transform .18s ease;
+}
+
+.pce-action-btn:hover {
+  transform: translateY(-1px);
+  border-color: #5372dc;
+  background: #4667db;
+  box-shadow: none;
+}
+
+.pce-action-btn:active { transform: translateY(0); }
+
+.pce-email-link {
+  display: block;
+  width: 100%;
+  margin-top: -12px;
+  border: 0;
+  background: transparent;
+  color: #d2d6e4;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pce-email-link:hover { color: #fff; }
+.pce-guarantee { color: #b3b7c1; font-size: 10px; }
+.pce-guarantee svg { color: #aebcff; }
+
+.pce-option-card:focus-visible,
+.pce-addon-chip:focus-visible,
+.pce-currency-btn:focus-visible,
+.pce-action-btn:focus-visible,
+.pce-email-link:focus-visible,
+.pce-slider:focus-visible {
+  outline: 3px solid #8ca0f2;
+  outline-offset: 3px;
+}
+
+@media (max-width: 980px) {
+  .pce-grid { grid-template-columns: minmax(0, 1fr); }
+  .pce-summary-card { position: static; }
+}
+
+@media (max-width: 640px) {
+  .pce-section { padding: 72px 18px; }
+  .pce-header { margin-bottom: 34px; }
+  .pce-heading { font-size: clamp(34px, 10vw, 46px); }
+  .pce-sub { font-size: 14px; }
+  .pce-options-grid, .pce-addons-grid { grid-template-columns: minmax(0, 1fr); }
+  .pce-option-card { min-height: 0; }
+  .pce-summary-card { gap: 21px; }
+  .pce-summary-header { align-items: flex-start; }
+  .pce-slider-labels { gap: 10px; }
+  .pce-slider-labels > span:first-child { font-size: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pce-option-card,
+  .pce-addon-chip,
+  .pce-action-btn,
+  .pce-currency-btn,
+  .pce-option-icon,
+  .pce-slider::-webkit-slider-thumb { transition: none; }
+  .pce-option-card:hover,
+  .pce-action-btn:hover { transform: none; }
+}

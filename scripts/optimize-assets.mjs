@@ -7,7 +7,7 @@ import sharp from "sharp";
 const assets = new URL("../public/assets/", import.meta.url);
 const output = new URL("optimized/", assets);
 await fs.mkdir(output, { recursive: true });
-const projects = ["NOIRE-Modern-Forms-Fashion-Homepage.png", "Lumiere-Luxury-Salon-Website-Mockup.png", "elevate-architecture.png", "terra-skincare.png", "maison-interiors.png", "aura-retreat.png"];
+const projects = ["NOIRE-Modern-Forms-Fashion-Homepage.png", "Lumiere-Luxury-Salon-Website-Mockup.png", "elevate-architecture.png", "terra-skincare.png", "elevate-live-hero.png", "terra-live-hero.png", "maison-interiors.png", "aura-retreat.png"];
 const supporting = ["hero-img.png", "hero-bg.png", "dark-phone.jpg", "dark-section-bg.png", "cta-architecture.jpg", "process-bg.jpg"];
 const report = [];
 for (const file of [...projects, ...supporting]) {
